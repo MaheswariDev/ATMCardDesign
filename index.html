@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html ng-app="ATM">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>User Payment Concept</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="app.css" rel="stylesheet" />
+</head>
+<body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-route.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-messages.min.js"></script>
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="app.js"></script>
+
+
+  <!-- Card design -->
+  <div class="global-container" ng-controller="cardController">
+    <div class="card payment-form shadow-sm p-3 mb-5 bg-white rounded">
+
+      <!-- Payment card  -->
+      <div class="card top-sec">
+        <div class="top-sec-card-body">
+            <img class="card-type" src="https://previews.123rf.com/images/alancotton/alancotton1511/alancotton151100211/48042691-closeup-of-a-credit-card-chip.jpg">
+            <img class="card-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRScwppbOx7YFkMZ15nwB36tr7AY9r6RtzzOw&usqp=CAU">
+            <p class="card_numer">{{displayCardNumber}}</p>
+            <div class="card-space-70">
+              <span class="card__label">Card holder</span>
+              <p class="card__info">{{displayName}}</p>
+            </div>
+            <div class="card__space-25">
+              <span class="card__label">Expires</span>
+              <p class="card__info">{{expMonth}}/{{expYear}}</p>
+            </div>
+          </div>
+      </div>
+
+
+      <!-- Payment form -->
+      <div class="card-body payment-card-body">
+        <div class="card-text">
+        <form>
+          <div class="form-group">
+            <label for="cardNumber">Card Number</label>
+            <input type="text" class="form-control form-control-sm" id="cardNumber" name ="cardNumber" ng-model="entercardNumber" pattern="\d*" maxlength="19" minlength="13" required="">
+          </div>
+          <div class="form-group">
+            <label for="cardHolderName">Card Holder Name</label>
+            <input type="text" class="form-control form-control-sm" id="cardHolderName" ng-model="cardHolderName" required="">
+          </div>       
+          <div class="row">  
+          <div class="form-group col-7" id="expires">
+           <label>Expiration Date</label>
+           <div>
+                <select class=" form-control-sm" id="expMonth" name ="expMonth" ng-model="expMonth" required="">
+                    <option value="" disabled selected>MM</option>
+                    <option value="01">01</option>
+                    <option value="02">02 </option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <select class=" form-control-sm" id="expYear" name ="expYear" ng-model="expYear" required="">
+                    <option value="" disabled selected>YY</option>
+                    <option value="16"> 2016</option>
+                    <option value="17"> 2017</option>
+                    <option value="18"> 2018</option>
+                    <option value="19"> 2019</option>
+                    <option value="20"> 2020</option>
+                    <option value="21"> 2021</option>
+                </select>
+              </div>
+          </div>
+          <div class="form-group col-5" id="CVV">
+            <label for="CVV">CVV</label>
+            <input type="text" class="form-control form-control-sm" id="cvv" name="cvv" pattern="/^[0-9]{3,4}$/" ng-model="cvv" required="">
+          </div>
+          </div> 
+          <button type="submit" class="btn btn-warning btn-block">Submit</button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

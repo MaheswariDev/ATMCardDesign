@@ -1,86 +1,74 @@
 html,body { 
-	height: 100%; 
+    height: 100%; 
 }
 .global-container{
-	height:100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #bddcf1;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #bddcf1;
 }
 form{
-	padding-top: 10px;
-	font-size: 14px;
-	margin-top: 30px;
+    padding-top: 10px;
+    font-size: 14px;
+    margin-top: 30px;
 }
 .card-title{ font-weight:300; }
 .btn{
-	font-size: 14px;
-	margin-top:15px;
+    font-size: 14px;
+    margin-top:15px;
 }
 .payment-form{ 
-	width: 27rem;
-	margin-top: 5%;
-	position: relative;
-	margin: 0 auto;
-	top: 10%;
+    width: 27rem;
+    margin-top: 5%;
+    position: relative;
+    margin: 0 auto;
+    top: 10%;
 }
 .payment-card-body{
-	margin-top: 50px;
+    margin-top: 50px;
 }
 .sign-up{
-	text-align:center;
-	padding:20px 0 0;
+    text-align:center;
+    padding:20px 0 0;
 }
 .alert{
-	margin-bottom:-30px;
-	font-size: 13px;
-	margin-top:20px;
+    margin-bottom:-30px;
+    font-size: 13px;
+    margin-top:20px;
 }
-/*.top-sec {
-	margin-top: -22%;
-	width: 71%;
-	margin-left: 11.5%;
-	position: absolute;
-	height: 40%;
-	border: 1px solid#b9b7b7;
-}*/
 
 /*top section design*/
 .top-sec {
-	margin-top: -24%;
-	position: absolute;
-	width: 320px;
-height: 40%;
-margin-left: 9%;
+    margin-top: -24%;
+    position: absolute;
+    width: 320px;
+    height: 40%;
+    margin-left: 9%;
 
 }
 .top-sec-card-body{
-	 box-shadow: 1px 1px #aaa3a3;
+    box-shadow: 1px 1px #aaa3a3;
     top: 0;
-  position: absolute;
-z-index: 1000;
-  left: 0;
-  display: inline-block;
+    position: absolute;
+    z-index: 1000;
+    left: 0;
+    display: inline-block;
     width: 320px;
     height: 190px;
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvKaT_b5iV8r9uEg43CH_MBRuDDLKJOR03xw&usqp=CAU'), 
-    linear-gradient(to right bottom, #0a0119, #4a0505, #5f0808, #560202, #150101); /*linear-gradient(to right bottom, #fd8369, #fc7870, #f96e78, #f56581, #ee5d8a)*/
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvKaT_b5iV8r9uEg43CH_MBRuDDLKJOR03xw&usqp=CAU');
     border-radius: 8px;
 }
 .card-logo{
-      position: absolute;
+    position: absolute;
     top: 24px;
-        right: 18px;
+    right: 18px;
     height: 15px;
 }
 .card-type {
     border-radius: 5px;
     height: 30px;
-        margin: 18px 22px;
+    margin: 18px 22px;
 }
 .card_numer {
     display: block;
@@ -90,14 +78,13 @@ z-index: 1000;
     letter-spacing: 2px;
     color: #fff;
     text-align: center;
-        margin: 18px 0px;
+    margin: 18px 0px;
 }
 
 .card-space-70 {
-       width: 67%;
+    width: 67%;
     float: left;
     margin-left: 25px;
-}
 }
 
 .card__space-25 {
@@ -117,22 +104,22 @@ z-index: 1000;
     font-size: 13px;
     line-height: 18px;
     color: #fff;
-  letter-spacing: 1px;
-  text-transform: capitalize;
+    letter-spacing: 1px;
+    text-transform: capitalize;
 }
 
 
 .rounded {
-	border-radius: .60rem!important;
+    border-radius: .60rem!important;
 }
 .shadow-sm {
-	box-shadow: 0 .125rem .25rem #c5c5c5!important;
+    box-shadow: 0 .125rem .25rem #c5c5c5!important;
 }
 #expMonth, #expYear{
-	color: #495057;
-	background-color: #fff;
-	background-clip: padding-box;
-	border: 1px solid #ced4da;
-	    margin: 0 4px;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    margin: 0 4px;
     padding: 0 15px;
 }
